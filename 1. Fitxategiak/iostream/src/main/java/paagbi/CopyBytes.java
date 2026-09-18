@@ -10,7 +10,8 @@ public class CopyBytes {
         FileInputStream in = null;
         FileOutputStream out = null;
 
-        try {
+        try 
+        {
             in = new FileInputStream("xanadu.txt");
             out = new FileOutputStream("outagain.txt");
             int c;
@@ -18,7 +19,15 @@ public class CopyBytes {
             while ((c = in.read()) != -1) {
                 out.write(c);
             }
-        } finally {
+        } 
+        
+        catch (IOException e)
+        {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+        
+        finally 
+        {
             if (in != null) {
                 in.close();
             }
