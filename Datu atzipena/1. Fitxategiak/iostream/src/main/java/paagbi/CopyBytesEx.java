@@ -19,6 +19,11 @@ public class CopyBytes {
             while ((c = in.read()) != -1) {
                 out.write(c);
             }
+        } 
+        
+        catch (IOException e)
+        {
+            System.out.println("An error occurred: " + e.getMessage());
         }
         
         finally 
