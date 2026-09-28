@@ -4,14 +4,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
-public class DirektorioakBaieztatu
+public class CDirektorioakBaieztatu
 {
     public static void main(String[] args) 
     {
         Scanner scanner = new Scanner(System.in);
 
         //Erabiltzaileari path absolutua sartzeko eskatzen dio, fitxategi edo direktorio batena
-        System.out.print("Sartu fitxategi edo direktorio baten path absolutoa: ");
+        System.out.print("Sartu direktorio baten path absolutoa: ");
         String sarrera = scanner.nextLine();
 
         Path helb = Path.of(sarrera);
@@ -29,19 +29,9 @@ public class DirektorioakBaieztatu
             // Existitzen bada path-a
             if (Files.exists(helb)) 
             {
-                // Karpeta bat bada
-                if (Files.isDirectory(helb)) 
-                {
-                    System.out.println("-> Karpeta bat da.");
-                } 
-                
-                // Fitxategi bat bada
-                else if (Files.isRegularFile(helb)) 
-                {
-                    System.out.println("-> Fitxategi bat da.");
-                }
-            } 
-            
+                System.out.println("-> Karpeta existitzen da da.");
+            }
+
             //Ez bada existitzen path-a
             else 
             {

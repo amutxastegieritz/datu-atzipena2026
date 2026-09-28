@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 /* Karpeten egitura sortzeko klasea */
 
-public class DirektorioakSortu 
+public class BirektorioakSortu 
 {
     public static void main( String[] args )
     {
