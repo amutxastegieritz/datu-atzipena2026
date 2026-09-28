@@ -6,6 +6,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+/*
+Programa honek karpetak eta fitxategiak sortzeko, direktorioak baieztatzeko eta 
+edukia bistaratzeko aukera ematen du. Animalieei buruzko karpetak sortzen dira (arrainak eta ugaztunak) eta elikagaiei 
+buruzko karpetak (barazkiak eta esnekiak).
+
+Eritz Amutxastegi.
+*/
+
 public class App 
 {
     static Scanner scanner = new Scanner(System.in); //Static funtzio denetan erabili ahal izateko.
