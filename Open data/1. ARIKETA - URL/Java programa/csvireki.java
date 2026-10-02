@@ -12,7 +12,7 @@ Internetetik eta bertan dauden datuak kontsolan
 bistaratzen dira.
  */
 
-public class csvireki 
+public class CsvIreki 
 {
     public static void main(String[] args) 
     {
